@@ -66,7 +66,10 @@ export function App() {
     setStore(s);
     setPersistor(p);
   }, []);
-
+  consol.log("error")
+  functrion abc() {
+    console.log("hie")
+  }
   return (
     <If condition={!!persistor} otherwise={<div>LOADING</div>}>
       <PersistGate loading={null} persistor={persistor}>
